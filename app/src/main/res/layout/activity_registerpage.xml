@@ -1,0 +1,81 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/background1"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTER PAGE"
+        android:textColor="@color/pink"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:hint="Username"
+        android:textColorHint="@color/purple_500" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/purple_500"
+        android:layout_below="@+id/username"/>
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Retype Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/purple_500"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/password"/>
+
+    <Button
+        android:id="@+id/btnsingup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repassword"
+        android:layout_marginTop="20dp"
+        android:text="Sign up" />
+
+    <TextView
+        android:id="@+id/existinguser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnsingup"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="Existing user! Go to sign in page"
+        android:textColor="@color/purple_500"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please fill out the form before logging in!!"
+        android:id="@+id/form"
+        android:layout_below="@+id/existinguser"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>

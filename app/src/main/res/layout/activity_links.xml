@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".links">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mentalhealth"
+        android:id="@+id/strimg"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/link1"
+        android:layout_marginTop="30dp"
+        android:text="click here for low level"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/strimg"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/link2"
+        android:layout_marginTop="30dp"
+        android:text="click here for below average level"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/link1"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/link3"
+        android:layout_marginTop="30dp"
+        android:text="click here for average level"
+        android:textColor="@color/brown"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/link2"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/link4"
+        android:layout_marginTop="30dp"
+        android:text="click here for above average level"
+        android:textColor="@color/grre"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/link3"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/link5"
+        android:layout_marginTop="30dp"
+        android:text="click here for high level"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/link4"
+        android:gravity="center"/>
+
+
+
+</RelativeLayout>

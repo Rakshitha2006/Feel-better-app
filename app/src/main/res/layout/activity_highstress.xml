@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".highstress">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="For best results!!!"
+        android:gravity="center"
+        android:id="@+id/txt1"
+        android:textColor="@color/darkblue"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="280dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Met a psycologist/psychiatrist"
+        android:gravity="center"
+        android:id="@+id/txt2"
+        android:textColor="@color/brown"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="340dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/form"
+        android:layout_below="@+id/txt2"
+        android:layout_marginTop="20dp"
+        android:text="fix an appointment"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:padding="24dp"
+    tools:context=".questionaire">
+
+    <TextView
+        android:id="@+id/total_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Total Questions"
+        android:textColor="@color/pink"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/headinganxiety"
+        android:text="STRESS QUESTIONS"
+        android:gravity="center"
+        android:layout_below="@+id/total_question"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/darkviolet"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/choices_layout"
+        android:layout_marginBottom="2dp"
+        android:text="This will be the question?"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choices_layout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/yes"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/purple_500"
+            android:text="YES"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/no"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/purple_500"
+            android:text="NO"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_btn"
+        android:text="submit"
+        android:layout_below="@+id/choices_layout"
+        android:backgroundTint="@color/grey"
+        android:layout_marginTop="50dp"/>
+
+
+</RelativeLayout>

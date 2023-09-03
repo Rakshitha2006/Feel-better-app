@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:orientation="vertical"
+    tools:context=".appointment">
+
+            <TextView
+                android:id="@+id/book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="BOOK AN APPOINTMENT"
+                android:textColor="@color/pink"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/healthcond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner"
+                android:layout_marginTop="11dp"
+                android:text="Any health condition:"
+                android:textColor="@color/purple_500"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/check1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/healthcond"
+                android:text="Thyroid"
+                android:textColor="@color/purple_500"
+                android:textSize="19dp" />
+
+            <CheckBox
+                android:id="@+id/check2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/check1"
+                android:text="Blood sugar"
+                android:textColor="@color/purple_500"
+                android:textSize="19dp" />
+
+            <CheckBox
+                android:id="@+id/check3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/check2"
+                android:text="Blood Pressure"
+                android:textColor="@color/purple_500"
+                android:textSize="19dp" />
+
+            <CheckBox
+                android:id="@+id/check4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/check3"
+                android:text="Cholestrol"
+                android:textColor="@color/purple_500"
+                android:textSize="19dp" />
+
+            <TextView
+                android:id="@+id/healthother"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/check4"
+                android:layout_marginTop="20dp"
+                android:text="Any other specify:"
+                android:textColor="@color/purple_500"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="specification"
+                android:textColor="@color/purple_500"
+                android:textSize="19dp" />
+
+            <EditText
+                android:id="@+id/dateformatid"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:hint="Select Date"
+                android:textColor="@color/purple_500"
+                android:textColorHint="@color/purple_500" />
+
+            <EditText
+                android:id="@+id/timeformatid"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/purple_500"
+                android:hint="Select Time"
+                android:textColorHint="@color/purple_500" />
+
+            <Button
+                android:id="@+id/btnfix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="submit"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/feedbackbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="feedback"
+        android:textSize="15dp"
+        tools:ignore="TextSizeCheck" />
+
+
+
+
+</LinearLayout>
+
